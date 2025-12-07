@@ -1,0 +1,47 @@
+/* Estilos adicionales (sin @apply para compatibilidad CDN) */
+:root{--ring:0 229 255}
+.nav-link{color:rgba(255,255,255,.75);transition:color .2s ease}
+.nav-link:hover{color:#00e5ff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.7rem 1rem;border-radius:.75rem;font-weight:600;border:1px solid rgba(255,255,255,.08);backdrop-filter:saturate(140%) blur(4px)}
+.btn-primary{background:linear-gradient(135deg,#00e5ff33,#ff00ea22);border-color:rgba(255,255,255,.12)}
+.btn-primary:hover{box-shadow:0 0 30px rgba(0,229,255,.25)}
+.btn-ghost{background:transparent;color:#fff}
+.btn-ghost:hover{border-color:rgba(255,255,255,.25)}
+.btn-neon{background:#00e5ff;color:#001018;box-shadow:0 10px 30px rgba(0,229,255,.35)}
+.btn-neon:hover{filter:brightness(1.05)}
+.section{padding:4rem 0}
+.section-inner{max-width:80rem;margin:0 auto;padding:0 1.5rem}
+.section-title{font-size:1.875rem;font-weight:800;margin-bottom:1rem}
+.section-text{color:rgba(255,255,255,.75);margin-bottom:1.5rem}
+.card,.skill,.project{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.1);border-radius:1rem;padding:1rem}
+.card:hover,.project:hover{border-color:rgba(0,229,255,.45);box-shadow:0 0 30px rgba(0,229,255,.15)}
+.skill h3{font-weight:700;margin-bottom:.5rem}
+.input{width:100%;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.12);border-radius:.75rem;padding:.75rem .9rem;color:#fff}
+.input:focus{outline:none;border-color:#00e5ff;box-shadow:0 0 0 3px rgba(0,229,255,.25)}
+footer a{transition:color .2s ease}
+.glow-card{background:linear-gradient(135deg,rgba(0,229,255,.35),rgba(255,255,255,.02));box-shadow:0 0 50px rgba(0,229,255,.12)}
+/* Animaciones reveal */
+.reveal{opacity:0;transform:translateY(20px)}
+.reveal.in{opacity:1;transform:none;transition:all .6s ease}
+
+/* Avatar con aura */
+.avatar{position:relative;width:220px;aspect-ratio:1/1;border-radius:9999px;padding:6px;background:conic-gradient(from 180deg at 50% 50%, rgba(0,229,255,.6), rgba(255,0,234,.5), rgba(0,229,255,.6));box-shadow:0 0 40px rgba(0,229,255,.25)}
+.avatar::after{content:"";position:absolute;inset:-8px;border-radius:inherit;filter:blur(12px);background:radial-gradient(60% 60% at 50% 50%, rgba(0,229,255,.35), transparent 70%);z-index:-1}
+.avatar img{width:100%;height:100%;object-fit:cover;border-radius:inherit;border:1px solid rgba(255,255,255,.2)}
+
+/* Badges */
+.badge{display:inline-flex;align-items:center;gap:.35rem;padding:.25rem .6rem;border-radius:.6rem;background:rgba(0,229,255,.12);border:1px solid rgba(0,229,255,.35);color:#8be9ff;font-size:.75rem}
+
+/* Barras de progreso */
+.progress{height:10px;border-radius:9999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);overflow:hidden}
+.progress>span{display:block;height:100%;background:linear-gradient(90deg,#00e5ff,#ff00ea);box-shadow:inset 0 0 18px rgba(0,229,255,.35)}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:1rem;z-index:70}
+.modal.open{display:flex}
+.modal-backdrop{position:absolute;inset:0;background:rgba(11,15,26,.75);backdrop-filter:blur(6px)}
+.modal-card{position:relative;max-width:960px;width:min(92vw,960px);border-radius:1rem;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);box-shadow:0 40px 80px rgba(0,0,0,.45)}
+.modal-media{width:100%;max-height:420px;object-fit:cover}
+.modal-body{padding:1rem 1.25rem 1.25rem}
+.modal-close{position:absolute;top:.6rem;right:.6rem;background:rgba(0,0,0,.35);color:white;border:1px solid rgba(255,255,255,.2);height:40px;width:40px;border-radius:.75rem;display:grid;place-items:center}
+.modal-close:hover{border-color:#00e5ff;color:#00e5ff}
